@@ -1,8 +1,10 @@
-# Rspec Drill Simple Todo 
- 
-##Learning Competencies 
+# Rspec Drill Simple Todo
 
-##Summary 
+##Learning Competencies
+- What to test: We test behavior not implementation
+- How to unit test with Rspec
+
+##Summary
 
  We're going to take a trip back in time… to the land of Ruby Todos.  It is a magical and mundane realm with clearly defined expectations and many opportunities to practice object-oriented design.
 
@@ -21,9 +23,7 @@ When writing unit tests, be wary of the temptation to **test too deeply**, i.e. 
 
 ## Objectives
 
-### Grab the files from the gist
-
-Download the files from [the gist](https://gist.github.com/dbc-challenges/2f6973cad74bd41fb86b).  You will find two application files: `list.rb` and `task.rb` and two spec files `list_spec.rb` and `task_spec.rb`.
+In the source directory, you will find two application files: `list.rb` and `task.rb` and two spec files `list_spec.rb` and `task_spec.rb`.
 
 You can run the spec suite like so:
 
@@ -86,11 +86,4 @@ This code is an improvement in two ways:
 1. Invalid input is caught and will return `false`, which we can now test for.
 2. It no longer returns the return value of `#complete!`	, which for all we care could be anything at all.  Instead, it merely checks to be sure that `#complete!` returns a truthy value and then returns true.  This ensures that we have control over the return value of `#complete_task` regardless of what `#complete!` returns.
 
-Be on the lookout for other potential improvements like this one. 
-
-##Releases
-###Release 0 
-
-##Optimize Your Learning 
-
-##Resources
+Be on the lookout for other potential improvements like this one.
