@@ -39,7 +39,17 @@ describe List do
     it "should not allow to complete tasks out of index" do
       expect( larger_list.complete_task(100) ).to be_false
     end
+  end
 
+  describe "#delete_task" do
+    it "should delete tasks" do
+      larger_list.delete_task(1)
+      expect( larger_list.tasks.length ).to be(1)
+    end
+
+    it "should not allow to delete tasks out of index" do
+      expect( larger_list.delete_task(100) ).to be_false
+    end
   end
 
 end
